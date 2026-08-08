@@ -10,8 +10,6 @@
         html { scroll-behavior: smooth; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f8f8; color: #333; }
-
-        /* Header */
         .header-top { background-color: #000; color: #fff; text-align: center; padding: 8px; font-size: 12px; font-weight: 600; }
         .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #fff; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .nav-left { display: flex; align-items: center; gap: 15px; }
@@ -20,8 +18,6 @@
         .nav-right { display: flex; align-items: center; gap: 15px; }
         .cart-icon { background: none; border: none; font-size: 24px; cursor: pointer; position: relative; }
         .cart-count { position: absolute; top: -8px; right: -8px; background-color: #000; color: #fff; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
-
-        /* Mobile Menu */
         .mobile-menu { position: fixed; top: 0; left: -100%; width: 80%; max-width: 300px; height: 100vh; background-color: #fff; z-index: 1000; padding: 30px; transition: left 0.3s ease; overflow-y: auto; }
         .mobile-menu.active { left: 0; }
         .close-menu { background: none; border: none; font-size: 24px; cursor: pointer; margin-bottom: 30px; }
@@ -32,12 +28,8 @@
         .brand-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
         .brand-buttons button { padding: 8px 16px; background-color: #f0f0f0; border: none; border-radius: 20px; cursor: pointer; font-size: 14px; }
         .contact-info p { margin-bottom: 10px; font-size: 14px; display: flex; align-items: center; gap: 10px; }
-
-        /* Sections */
         section { padding: 80px 20px 40px; max-width: 1200px; margin: 0 auto; }
         .section-title { text-align: center; font-size: 28px; font-weight: 700; margin-bottom: 30px; text-transform: uppercase; }
-
-        /* Hero */
         .hero { text-align: center; padding: 100px 20px; background-color: #000; color: #fff; max-width: 100%; }
         .hero h1 { font-size: 36px; margin-bottom: 15px; }
         .hero p { font-size: 18px; color: #ccc; margin-bottom: 30px; }
@@ -45,24 +37,16 @@
         .hero-btn:hover { background-color: #ddd; }
         .payment-badges { display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap; }
         .payment-badge { background-color: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 5px; font-size: 14px; display: flex; align-items: center; gap: 8px; }
-
-        /* Search */
         .search-container { position: relative; max-width: 600px; margin: 30px auto 20px; padding: 0 20px; }
         .search-container input { width: 100%; padding: 15px 20px 15px 50px; border: 1px solid #ddd; border-radius: 30px; font-size: 16px; outline: none; background-color: #fff; transition: border-color 0.3s, box-shadow 0.3s; }
         .search-container input:focus { border-color: #000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .search-icon { position: absolute; left: 40px; top: 50%; transform: translateY(-50%); color: #999; font-size: 18px; }
-
-        /* Stock statement */
         .stock-statement { max-width: 1200px; margin: 20px auto 0; padding: 15px 20px; background: #e8f7f0; border: 1px solid #00B06E; border-radius: 8px; display: flex; gap: 12px; align-items: center; color: #007a4d; font-size: 14px; line-height: 1.5; }
         .stock-statement i { font-size: 22px; flex-shrink: 0; }
-
-        /* Category Filter */
         .category-filter { display: flex; justify-content: center; gap: 20px; padding: 20px; background-color: #fff; border-bottom: 1px solid #e0e0e0; overflow-x: auto; position: sticky; top: 70px; z-index: 90; }
         .filter-btn { padding: 10px 20px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; position: relative; white-space: nowrap; color: #666; }
         .filter-btn.active { color: #000; }
         .filter-btn.active::after { content: ''; position: absolute; bottom: -10px; left: 0; right: 0; height: 2px; background-color: #000; }
-
-        /* Products */
         .products-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
         .product-card { background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
@@ -84,23 +68,17 @@
         .size-btn:hover, .size-btn.active { border-color: #000; }
         .add-to-bag { width: 100%; padding: 15px; background-color: #000; color: #fff; border: none; border-radius: 5px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease; }
         .add-to-bag:hover { background-color: #333; }
-
-        /* About / Contact */
         .about-text, .contact-text { text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 18px; color: #555; }
         .contact-links { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 30px; }
         .contact-btn { display: flex; align-items: center; gap: 10px; padding: 15px 30px; background-color: #25D366; color: #fff; text-decoration: none; font-weight: 700; border-radius: 5px; font-size: 18px; transition: background-color 0.3s ease; }
         .contact-btn:hover { background-color: #128C7E; }
         .contact-btn.email { background-color: #000; }
         .contact-btn.email:hover { background-color: #333; }
-
-        /* Policies */
         .policy-section { background: #fff; border-radius: 10px; padding: 30px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .policy-section h3 { margin: 20px 0 12px; font-size: 18px; color: #000; }
         .policy-section h3:first-child { margin-top: 0; }
         .policy-section p, .policy-section li { color: #555; line-height: 1.7; font-size: 15px; margin-bottom: 10px; }
         .policy-section ul { padding-left: 22px; }
-
-        /* FAQ */
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { background: #fff; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden; }
         .faq-question { width: 100%; padding: 18px 20px; background: #fff; border: none; text-align: left; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
@@ -108,16 +86,12 @@
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 20px; color: #555; line-height: 1.6; font-size: 15px; }
         .faq-item.open .faq-answer { max-height: 300px; padding-bottom: 18px; }
         .faq-item.open .faq-toggle { transform: rotate(45deg); }
-
-        /* Testimonials */
         .testimonials-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
         .testimonial-card { background: #fff; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .testimonial-stars { color: #FFC107; margin-bottom: 12px; font-size: 14px; }
         .testimonial-text { color: #555; line-height: 1.6; margin-bottom: 15px; font-style: italic; }
         .testimonial-author { font-weight: 700; }
         .testimonial-location { font-size: 13px; color: #888; }
-
-        /* Cart */
         .cart-sidebar { position: fixed; top: 0; right: -100%; width: 100%; max-width: 450px; height: 100vh; background-color: #fff; z-index: 1001; display: flex; flex-direction: column; transition: right 0.3s ease; }
         .cart-sidebar.active { right: 0; }
         .cart-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 1000; display: none; }
@@ -140,8 +114,6 @@
         .checkout-btn.whatsapp:hover { background-color: #128C7E; }
         .checkout-btn.paystack { background-color: #00B06E; }
         .checkout-btn.paystack:hover { background-color: #00915A; }
-
-        /* Payment Modal */
         .payment-modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 20px; }
         .payment-modal.active { display: flex; }
         .payment-modal-content { background-color: #fff; border-radius: 10px; padding: 30px; max-width: 500px; width: 100%; max-height: 90vh; overflow-y: auto; }
@@ -160,8 +132,6 @@
         .payment-method-info p { font-size: 13px; color: #666; }
         .pay-now-btn { width: 100%; padding: 15px; background-color: #00B06E; color: #fff; border: none; border-radius: 5px; font-size: 18px; font-weight: 700; cursor: pointer; margin-top: 10px; }
         .pay-now-btn:hover { background-color: #00915A; }
-
-        /* ===== ADMIN DASHBOARD ===== */
         .admin-panel { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #f4f4f4; z-index: 3000; overflow-y: auto; display: none; }
         .admin-panel.active { display: block; }
         .admin-header { background: #000; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; flex-wrap: wrap; gap: 10px; }
@@ -184,8 +154,9 @@
         .admin-list-item img { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; background: #f0f0f0; }
         .admin-list-item .info { flex: 1; font-size: 14px; }
         .img-preview { width: 90px; height: 90px; object-fit: cover; border-radius: 6px; border: 1px solid #ddd; display: none; margin-top: 8px; }
-
-        /* Footer */
+        .sync-status { display: block; margin-bottom: 12px; font-size: 13px; font-weight: 700; padding: 10px; border-radius: 6px; }
+        .sync-status.on { background: #e8f7f0; color: #007a4d; }
+        .sync-status.off { background: #fff8e1; color: #b26a00; }
         .footer { background-color: #fff; margin-top: 60px; padding: 60px 20px 20px; }
         .footer-content { max-width: 1200px; margin: 0 auto; text-align: center; }
         .footer-content h2 { font-size: 28px; margin-bottom: 10px; }
@@ -199,7 +170,6 @@
         .social-links a { font-size: 24px; color: #333; transition: color 0.3s ease; }
         .social-links a:hover { color: #000; }
         .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #e0e0e0; margin-top: 40px; color: #666; font-size: 14px; }
-
         @media (max-width: 768px) {
             .logo { font-size: 16px; }
             .products-container { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
@@ -211,13 +181,11 @@
             .search-icon { left: 35px; }
             .stock-statement { margin: 20px 20px 0; }
         }
-
         .empty-cart, .no-results { text-align: center; padding: 40px; color: #666; grid-column: 1 / -1; }
         .empty-cart i, .no-results i { font-size: 60px; margin-bottom: 20px; opacity: 0.3; }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header-top"><p>FREE DELIVERY ON ORDERS OVER GH₵500 • ACCRA, GHANA</p></div>
         <nav class="navbar">
@@ -226,15 +194,11 @@
                 <h1 class="logo">ALL IS HERE ENTERPRISE</h1>
             </div>
             <div class="nav-right">
-                <button class="cart-icon" onclick="toggleCart()">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span class="cart-count" id="cartCount">0</span>
-                </button>
+                <button class="cart-icon" onclick="toggleCart()"><i class="fas fa-shopping-bag"></i><span class="cart-count" id="cartCount">0</span></button>
             </div>
         </nav>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
         <ul>
@@ -265,7 +229,6 @@
         </div>
     </div>
 
-    <!-- Hero -->
     <section id="home" class="hero">
         <h1>ALL IS HERE ENTERPRISE</h1>
         <p>Premium Sneakers, Dresses, and Fashion in Ghana.</p>
@@ -277,19 +240,16 @@
         </div>
     </section>
 
-    <!-- Search -->
     <div class="search-container" id="shop">
         <i class="fas fa-search search-icon"></i>
         <input type="text" id="searchInput" placeholder="Search for sneakers, dresses, brands...">
     </div>
 
-    <!-- Stock statement -->
     <div class="stock-statement">
         <i class="fas fa-warehouse"></i>
         <p><strong>100% IN-STOCK GUARANTEE:</strong> Every product listed on this website is physically in stock at our Accra store and ready for immediate dispatch. We do <strong>NOT</strong> operate a dropshipping model — all orders ship directly from our own inventory.</p>
     </div>
 
-    <!-- Category Filter -->
     <div class="category-filter">
         <button class="filter-btn active" onclick="filterProducts('all')">ALL</button>
         <button class="filter-btn" onclick="filterProducts('sneakers')">SNEAKERS</button>
@@ -298,25 +258,20 @@
         <button class="filter-btn" onclick="filterProducts('boots')">BOOTS</button>
     </div>
 
-    <!-- Shop -->
     <section id="shop-section">
         <h2 class="section-title">Latest Drops</h2>
         <div class="products-container" id="productsContainer"></div>
     </section>
 
-    <!-- About -->
     <section id="about">
         <h2 class="section-title">About Us</h2>
         <div class="about-text">
-            <p>Welcome to <strong>ALL IS HERE ENTERPRISE</strong>. We are dedicated to bringing you the finest selection of premium sneakers, stylish dresses, and casual wear in Ghana.</p>
-            <br>
-            <p>Whether you're looking for the latest Nike Air Force 1s, classic Adidas Sambas, or elegant evening dresses, we've got you covered. We pride ourselves on authentic products, excellent customer service, and fast delivery across Accra and beyond.</p>
-            <br>
+            <p>Welcome to <strong>ALL IS HERE ENTERPRISE</strong>. We are dedicated to bringing you the finest selection of premium sneakers, stylish dresses, and casual wear in Ghana.</p><br>
+            <p>Whether you're looking for the latest Nike Air Force 1s, classic Adidas Sambas, or elegant evening dresses, we've got you covered. We pride ourselves on authentic products, excellent customer service, and fast delivery across Accra and beyond.</p><br>
             <p>All of our inventory is purchased outright from verified suppliers and held in stock at our Accra location, so your order is dispatched immediately after payment — no third-party dropshipping, no long waits.</p>
         </div>
     </section>
 
-    <!-- Shipping Policy -->
     <section id="shipping">
         <h2 class="section-title">Shipping & Delivery Policy</h2>
         <div class="policy-section">
@@ -337,7 +292,6 @@
         </div>
     </section>
 
-    <!-- Refund & Cancellation Policy -->
     <section id="refunds">
         <h2 class="section-title">Refund & Cancellation Policy</h2>
         <div class="policy-section">
@@ -358,7 +312,6 @@
         </div>
     </section>
 
-    <!-- Terms of Service -->
     <section id="terms">
         <h2 class="section-title">Terms of Service</h2>
         <div class="policy-section">
@@ -376,80 +329,50 @@
         </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">Are your products original and in stock? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">Yes. Every product shown on this website is 100% authentic and physically in stock at our Accra store. We do NOT use a dropshipping model — your order is packed and dispatched directly from our own inventory.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">How long will delivery take? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">Deliveries within Accra take 1 – 2 business days, while deliveries outside Accra take 2 – 5 business days. Orders placed before 3:00 PM GMT are processed the same day.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">What payment methods do you accept? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">We accept Visa/Mastercard cards and Mobile Money (MTN, Vodafone, AirtelTigo) through Paystack's secure payment platform. You can also order via WhatsApp.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">What if I order the wrong size? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">You can exchange for the correct size within 7 days of delivery, as long as the item is unworn and in its original packaging. Contact us on WhatsApp (+233 599 121887) to arrange the exchange.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">How do refunds work? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">Once your return is received and inspected, approved refunds are processed within 3 – 7 business days back to your original payment method (card or Mobile Money) via Paystack, or as store credit if you prefer.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFAQ(this)">How can I track my order? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">You will receive a WhatsApp or phone update once your order is dispatched. You can also contact us anytime on +233 599 121887 with your order reference.</div>
-            </div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">Are your products original and in stock? <span class="faq-toggle">+</span></button><div class="faq-answer">Yes. Every product shown on this website is 100% authentic and physically in stock at our Accra store. We do NOT use a dropshipping model — your order is packed and dispatched directly from our own inventory.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">How long will delivery take? <span class="faq-toggle">+</span></button><div class="faq-answer">Deliveries within Accra take 1 – 2 business days, while deliveries outside Accra take 2 – 5 business days. Orders placed before 3:00 PM GMT are processed the same day.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">What payment methods do you accept? <span class="faq-toggle">+</span></button><div class="faq-answer">We accept Visa/Mastercard cards and Mobile Money (MTN, Vodafone, AirtelTigo) through Paystack's secure payment platform. You can also order via WhatsApp.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">What if I order the wrong size? <span class="faq-toggle">+</span></button><div class="faq-answer">You can exchange for the correct size within 7 days of delivery, as long as the item is unworn and in its original packaging. Contact us on WhatsApp (+233 599 121887) to arrange the exchange.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">How do refunds work? <span class="faq-toggle">+</span></button><div class="faq-answer">Once your return is received and inspected, approved refunds are processed within 3 – 7 business days back to your original payment method (card or Mobile Money) via Paystack, or as store credit if you prefer.</div></div>
+            <div class="faq-item"><button class="faq-question" onclick="toggleFAQ(this)">How can I track my order? <span class="faq-toggle">+</span></button><div class="faq-answer">You will receive a WhatsApp or phone update once your order is dispatched. You can also contact us anytime on +233 599 121887 with your order reference.</div></div>
         </div>
     </section>
 
-    <!-- Customer Feedback -->
     <section id="feedback">
         <h2 class="section-title">Customer Feedback</h2>
         <div class="testimonials-container">
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"Ordered the Air Force 1s on Monday and they arrived in East Legon the next day. 100% original, super clean stitching. Highly recommended!"</p>
-                <div class="testimonial-author">Kwame A.</div>
-                <div class="testimonial-location">Accra</div>
+                <div class="testimonial-author">Kwame A.</div><div class="testimonial-location">Accra</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"I was sceptical at first, but my Samba OG was authentic and the size was exactly right. Their WhatsApp customer service is top-notch."</p>
-                <div class="testimonial-author">Ama S.</div>
-                <div class="testimonial-location">Kumasi</div>
+                <div class="testimonial-author">Ama S.</div><div class="testimonial-location">Kumasi</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"Bought an evening dress for a wedding and received so many compliments. I initially picked the wrong size and the exchange was smooth and fast."</p>
-                <div class="testimonial-author">Efya M.</div>
-                <div class="testimonial-location">Takoradi</div>
+                <div class="testimonial-author">Efya M.</div><div class="testimonial-location">Takoradi</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
         <h2 class="section-title">Contact Us</h2>
-        <div class="contact-text">
-            <p>Have a question about a product, your order, or sizing? Reach out to us directly! We are always happy to help.</p>
-        </div>
+        <div class="contact-text"><p>Have a question about a product, your order, or sizing? Reach out to us directly! We are always happy to help.</p></div>
         <div class="contact-links">
             <a href="https://wa.me/233599121887" class="contact-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp (+233 599 121887)</a>
             <a href="mailto:dokumkwamevida@gmail.com" class="contact-btn email"><i class="fas fa-envelope"></i> Email Us (dokumkwamevida@gmail.com)</a>
         </div>
     </section>
 
-    <!-- Cart Sidebar -->
     <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h2>YOUR BAG</h2>
-            <button class="close-cart" onclick="toggleCart()"><i class="fas fa-times"></i></button>
-        </div>
+        <div class="cart-header"><h2>YOUR BAG</h2><button class="close-cart" onclick="toggleCart()"><i class="fas fa-times"></i></button></div>
         <div class="cart-items" id="cartItems"></div>
         <div class="cart-footer">
             <div class="cart-total"><span>Total:</span><span id="cartTotal">GH₵0</span></div>
@@ -459,27 +382,17 @@
         </div>
     </div>
 
-    <!-- Payment Modal -->
     <div class="payment-modal" id="paymentModal">
         <div class="payment-modal-content">
-            <div class="payment-modal-header">
-                <h2><i class="fas fa-lock"></i> Secure Checkout</h2>
-                <button class="close-payment" onclick="closePaymentModal()"><i class="fas fa-times"></i></button>
-            </div>
+            <div class="payment-modal-header"><h2><i class="fas fa-lock"></i> Secure Checkout</h2><button class="close-payment" onclick="closePaymentModal()"><i class="fas fa-times"></i></button></div>
             <div class="payment-form-group"><label>Full Name</label><input type="text" id="customerName" placeholder="Enter your full name"></div>
             <div class="payment-form-group"><label>Email Address</label><input type="email" id="customerEmail" placeholder="Enter your email"></div>
             <div class="payment-form-group"><label>Phone Number</label><input type="tel" id="customerPhone" placeholder="e.g., 0599121887"></div>
             <div class="payment-form-group"><label>Delivery Address</label><input type="text" id="deliveryAddress" placeholder="Enter your delivery address"></div>
             <h3 style="margin: 20px 0 15px; font-size: 16px;">Select Payment Method</h3>
             <div class="payment-methods">
-                <div class="payment-method selected" onclick="selectPaymentMethod(this, 'card')">
-                    <i class="fas fa-credit-card"></i>
-                    <div class="payment-method-info"><h4>Card Payment</h4><p>Pay with Visa or Mastercard</p></div>
-                </div>
-                <div class="payment-method" onclick="selectPaymentMethod(this, 'momo')">
-                    <i class="fas fa-mobile-alt"></i>
-                    <div class="payment-method-info"><h4>Mobile Money</h4><p>MTN, Vodafone, AirtelTigo</p></div>
-                </div>
+                <div class="payment-method selected" onclick="selectPaymentMethod(this, 'card')"><i class="fas fa-credit-card"></i><div class="payment-method-info"><h4>Card Payment</h4><p>Pay with Visa or Mastercard</p></div></div>
+                <div class="payment-method" onclick="selectPaymentMethod(this, 'momo')"><i class="fas fa-mobile-alt"></i><div class="payment-method-info"><h4>Mobile Money</h4><p>MTN, Vodafone, AirtelTigo</p></div></div>
             </div>
             <div style="background-color: #f8f8f8; padding: 15px; border-radius: 5px; margin: 20px 0;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"><span>Subtotal:</span><span id="modalSubtotal">GH₵0</span></div>
@@ -491,23 +404,15 @@
         </div>
     </div>
 
-    <!-- Admin Login Modal -->
     <div class="payment-modal" id="adminLoginModal">
         <div class="payment-modal-content" style="max-width: 380px;">
-            <div class="payment-modal-header">
-                <h2><i class="fas fa-user-shield"></i> Staff Login</h2>
-                <button class="close-payment" onclick="closeAdminLogin()"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="payment-form-group">
-                <label>Admin Password</label>
-                <input type="password" id="adminPassword" placeholder="Enter admin password">
-            </div>
+            <div class="payment-modal-header"><h2><i class="fas fa-user-shield"></i> Staff Login</h2><button class="close-payment" onclick="closeAdminLogin()"><i class="fas fa-times"></i></button></div>
+            <div class="payment-form-group"><label>Admin Password</label><input type="password" id="adminPassword" placeholder="Enter admin password"></div>
             <button class="pay-now-btn" onclick="attemptAdminLogin()">UNLOCK DASHBOARD</button>
             <p id="adminLoginError" style="color:#e53935; text-align:center; margin-top:10px; display:none; font-size:14px;">Wrong password. Try again.</p>
         </div>
     </div>
 
-    <!-- Admin Dashboard -->
     <div class="admin-panel" id="adminPanel">
         <div class="admin-header">
             <h2><i class="fas fa-user-shield"></i> ADMIN DASHBOARD — Product Manager</h2>
@@ -517,6 +422,22 @@
             </div>
         </div>
         <div class="admin-body">
+            <span id="syncStatus" class="sync-status off"></span>
+
+            <div class="admin-card">
+                <h3><i class="fab fa-github"></i> GitHub Connection (one-time setup)</h3>
+                <div class="admin-grid">
+                    <div class="admin-field"><label>Repository (owner/repo)</label><input type="text" id="ghRepo" placeholder="e.g. kwame/allishere"></div>
+                    <div class="admin-field"><label>Branch</label><input type="text" id="ghBranch" placeholder="main"></div>
+                    <div class="admin-field"><label>Folder (leave empty if files are at root)</label><input type="text" id="ghPrefix" placeholder="e.g. docs or leave empty"></div>
+                    <div class="admin-field full"><label>Personal Access Token</label><input type="password" id="ghToken" placeholder="github_pat_..."></div>
+                </div>
+                <div class="admin-actions">
+                    <button class="admin-btn primary" onclick="connectGitHub()"><i class="fas fa-plug"></i> CONNECT & TEST</button>
+                </div>
+                <p style="font-size:12px; color:#888; margin-top:12px;">Token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → generate a token with <strong>Contents: Read and write</strong> on this repository only. The token is saved only on this device.</p>
+            </div>
+
             <div class="admin-card">
                 <h3 id="formTitle"><i class="fas fa-plus-circle"></i> Add New Product</h3>
                 <div class="admin-grid">
@@ -542,7 +463,7 @@
                     <img id="pPreview" class="img-preview">
                 </div>
                 <div class="admin-actions">
-                    <button class="admin-btn green" onclick="saveProduct()"><i class="fas fa-save"></i> SAVE PRODUCT</button>
+                    <button class="admin-btn green" onclick="saveProduct()"><i class="fas fa-save"></i> SAVE & PUBLISH</button>
                     <button class="admin-btn gray" onclick="resetForm()">CANCEL</button>
                 </div>
             </div>
@@ -554,9 +475,8 @@
 
             <div class="admin-card">
                 <h3><i class="fas fa-cloud-upload-alt"></i> Publish & Backup</h3>
-                <p style="font-size:13px; color:#666; margin-bottom:12px;">Products you add are saved in this browser and appear in the store instantly on this device. To publish them for ALL customers, click <strong>COPY PRODUCTS CODE</strong> and replace the block between the <code>PRODUCTS START / PRODUCTS END</code> markers in your index.html file (or send the copied code to whoever hosts your site). Use Export/Import JSON to move products between devices.</p>
                 <div class="admin-actions">
-                    <button class="admin-btn primary" onclick="copyProductsCode()"><i class="fas fa-copy"></i> COPY PRODUCTS CODE</button>
+                    <button class="admin-btn green" onclick="publishAll()"><i class="fas fa-globe"></i> PUBLISH ALL TO WEBSITE</button>
                     <button class="admin-btn primary" onclick="exportJSON()"><i class="fas fa-download"></i> EXPORT JSON</button>
                     <button class="admin-btn primary" onclick="document.getElementById('importFile').click()"><i class="fas fa-upload"></i> IMPORT JSON</button>
                     <input type="file" id="importFile" accept=".json" style="display:none" onchange="importJSON(event)">
@@ -566,10 +486,8 @@
         </div>
     </div>
 
-    <!-- Cart Overlay -->
     <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <h2>ALL IS HERE ENTERPRISE</h2>
@@ -601,17 +519,25 @@
                 <div class="payment-badge"><i class="fas fa-mobile-alt"></i> Mobile Money</div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 ALL IS HERE ENTERPRISE. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 ALL IS HERE ENTERPRISE. All rights reserved.</p></div>
     </footer>
 
     <script>
-        // ================= ADMIN SETTINGS =================
-        const ADMIN_PASSWORD = 'allishere2026';   // <-- CHANGE THIS to your own password
+        // ================= SETTINGS =================
+        const ADMIN_PASSWORD = 'allishere2026';   // <-- CHANGE THIS
         const STORAGE_KEY = 'aihe_products_v1';
 
-        // ===== PRODUCTS START =====
+        // GitHub connection (saved on this device after Connect & Test)
+        const GH = {
+            repo: localStorage.getItem('gh_repo') || '',
+            branch: localStorage.getItem('gh_branch') || 'main',
+            prefix: localStorage.getItem('gh_prefix') || '',
+            token: localStorage.getItem('gh_token') || ''
+        };
+        function ghConnected() { return GH.repo && GH.token; }
+        function ghHeaders() { return { 'Authorization': 'Bearer ' + GH.token, 'X-GitHub-Api-Version': '2022-11-28' }; }
+        function ghPath(file) { return (GH.prefix ? GH.prefix.replace(/\/+$/,'') + '/' : '') + file; }
+
         const defaultProducts = [
             { id: 1, brand: 'Nike', name: 'Nike Air Force 1 Low', description: 'Classic white sneakers with premium leather', price: 319, originalPrice: 349, category: 'sneakers', image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Nike+AF1', sizes: [40, 41, 42, 43, 44] },
             { id: 2, brand: 'Adidas', name: 'Adidas Samba OG', description: 'Iconic indoor soccer shoe with vintage style', price: 359, originalPrice: null, category: 'sneakers', image: 'https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=Adidas+Samba', sizes: [39, 40, 41, 42] },
@@ -625,18 +551,8 @@
             { id: 10, brand: 'Fashion', name: 'Chic Casual Dress', description: 'Comfortable and trendy dress for everyday wear.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/X0yPjBC.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
             { id: 11, brand: 'Fashion', name: 'Classic Evening Dress', description: 'Perfect dress for evening outings and special events.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/0W8Ibe9.jpeg', sizes: ['S', 'M', 'L', 'XL'] }
         ];
-        // ===== PRODUCTS END =====
 
-        // Load products (from this browser's storage if saved, otherwise defaults)
-        let products = loadProducts();
-        function loadProducts() {
-            const stored = localStorage.getItem(STORAGE_KEY);
-            if (stored) { try { return JSON.parse(stored); } catch (e) {} }
-            return JSON.parse(JSON.stringify(defaultProducts));
-        }
-        function saveProducts() { localStorage.setItem(STORAGE_KEY, JSON.stringify(products)); }
-
-        // Cart State
+        let products = JSON.parse(JSON.stringify(defaultProducts));
         let cart = [];
         let currentCategory = 'all';
         let currentSearch = '';
@@ -647,33 +563,142 @@
         const PAYSTACK_PUBLIC_KEY = 'pk_test_099df02a13b62cf1bd0f121c3afe8430610bdff6';
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Prefill GitHub connection fields
+            document.getElementById('ghRepo').value = GH.repo;
+            document.getElementById('ghBranch').value = GH.branch;
+            document.getElementById('ghPrefix').value = GH.prefix;
+            document.getElementById('ghToken').value = GH.token;
+
+            setSyncBanner();
+            loadLiveProducts();
             applyFilters();
             updateCart();
             setupSearch();
             if (window.location.hash === '#admin') openAdminLogin();
 
-            document.getElementById('pImageFile').addEventListener('change', (e) => {
-                const file = e.target.files[0];
-                if (!file) return;
-                const reader = new FileReader();
-                reader.onload = (ev) => { pendingImage = ev.target.result; showPreview(pendingImage); };
-                reader.readAsDataURL(file);
-            });
+            document.getElementById('pImageFile').addEventListener('change', handleImageFile);
             document.getElementById('pImageUrl').addEventListener('input', (e) => {
                 pendingImage = null;
                 if (e.target.value.trim()) showPreview(e.target.value.trim());
             });
         });
 
-        // ================= ADMIN FUNCTIONS =================
+        function setSyncBanner() {
+            const el = document.getElementById('syncStatus');
+            if (ghConnected()) {
+                el.className = 'sync-status on';
+                el.innerHTML = '<i class="fas fa-circle"></i> LIVE SYNC ON (GitHub) — saves are published to your repository and go live in ~1 minute.';
+            } else {
+                el.className = 'sync-status off';
+                el.innerHTML = '<i class="fas fa-exclamation-triangle"></i> NOT CONNECTED — fill the GitHub Connection card below once, then everything publishes automatically.';
+            }
+        }
+
+        // Read the live products.json from the website (works for every visitor)
+        function loadLiveProducts() {
+            fetch('products.json?v=' + Date.now(), { cache: 'no-store' })
+                .then(r => r.ok ? r.json() : null)
+                .then(data => {
+                    if (Array.isArray(data) && data.length) {
+                        products = data;
+                        applyFilters();
+                        if (document.getElementById('adminPanel').classList.contains('active')) renderAdminList();
+                    }
+                }).catch(() => {});
+        }
+
+        // ================= GITHUB PUBLISHING =================
+        function connectGitHub() {
+            const repo = document.getElementById('ghRepo').value.trim();
+            const branch = document.getElementById('ghBranch').value.trim() || 'main';
+            const prefix = document.getElementById('ghPrefix').value.trim();
+            const token = document.getElementById('ghToken').value.trim();
+            if (!repo || !token) { alert('Enter repository and token.'); return; }
+
+            fetch('https://api.github.com/repos/' + repo, { headers: { 'Authorization': 'Bearer ' + token } })
+                .then(r => {
+                    if (r.ok) {
+                        GH.repo = repo; GH.branch = branch; GH.prefix = prefix; GH.token = token;
+                        localStorage.setItem('gh_repo', repo);
+                        localStorage.setItem('gh_branch', branch);
+                        localStorage.setItem('gh_prefix', prefix);
+                        localStorage.setItem('gh_token', token);
+                        setSyncBanner();
+                        alert('Connected! You can now upload products — they will publish automatically.');
+                    } else {
+                        alert('Connection failed (' + r.status + '). Check the repository name (owner/repo) and the token permissions.');
+                    }
+                }).catch(() => alert('Connection failed. Check your internet.'));
+        }
+
+        function b64(str) { return btoa(unescape(encodeURIComponent(str))); }
+
+        function putFile(path, base64Content, message) {
+            const url = 'https://api.github.com/repos/' + GH.repo + '/contents/' + path;
+            return fetch(url, { headers: ghHeaders() })
+                .then(r => r.ok ? r.json() : null)
+                .then(meta => {
+                    const body = { message: message, content: base64Content, branch: GH.branch };
+                    if (meta && meta.sha) body.sha = meta.sha;
+                    return fetch(url, {
+                        method: 'PUT',
+                        headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders()),
+                        body: JSON.stringify(body)
+                    });
+                });
+        }
+
+        function publishProducts(showSuccess) {
+            if (!ghConnected()) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+                if (showSuccess) alert('Saved on this device only. Connect GitHub to publish for everyone.');
+                return;
+            }
+            const content = JSON.stringify(products, null, 2);
+            putFile(ghPath('products.json'), b64(content), 'Products updated ' + new Date().toISOString())
+                .then(r => {
+                    if (r.ok) { if (showSuccess) alert('Published! Customers will see it in about 1 minute.'); }
+                    else r.json().then(d => alert('Publish failed: ' + (d.message || r.status)));
+                })
+                .catch(() => alert('Publish failed. Check your internet.'));
+        }
+
+        function publishAll() { publishProducts(true); }
+
+        function handleImageFile(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (ev) => {
+                const dataUrl = ev.target.result;
+                showPreview(dataUrl);
+                if (ghConnected()) {
+                    const m = dataUrl.match(/^data:image\/(png|jpe?g|webp);base64,(.+)$/s);
+                    if (m) {
+                        const ext = (m[1] === 'png') ? 'png' : ((m[1] === 'webp') ? 'webp' : 'jpg');
+                        const path = ghPath('uploads/product_' + Date.now() + '.' + ext);
+                        putFile(path, m[2], 'Product image ' + new Date().toISOString())
+                            .then(r => {
+                                if (r.ok) { pendingImage = 'uploads/product_' + path.split('/').pop(); }
+                                else { pendingImage = dataUrl; }
+                            })
+                            .catch(() => { pendingImage = dataUrl; });
+                    } else { pendingImage = dataUrl; }
+                } else {
+                    pendingImage = dataUrl;
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // ================= ADMIN =================
         function openAdminLogin() {
-            if (sessionStorage.getItem('aihe_admin') === '1') { openAdminPanel(); }
-            else { document.getElementById('adminLoginModal').classList.add('active'); }
+            if (sessionStorage.getItem('aihe_admin') === '1') openAdminPanel();
+            else document.getElementById('adminLoginModal').classList.add('active');
         }
         function closeAdminLogin() { document.getElementById('adminLoginModal').classList.remove('active'); }
         function attemptAdminLogin() {
-            const pw = document.getElementById('adminPassword').value;
-            if (pw === ADMIN_PASSWORD) {
+            if (document.getElementById('adminPassword').value === ADMIN_PASSWORD) {
                 sessionStorage.setItem('aihe_admin', '1');
                 document.getElementById('adminPassword').value = '';
                 document.getElementById('adminLoginError').style.display = 'none';
@@ -687,10 +712,7 @@
         function closeAdminPanel() { document.getElementById('adminPanel').classList.remove('active'); }
         function adminLogout() { sessionStorage.removeItem('aihe_admin'); closeAdminPanel(); }
 
-        function showPreview(src) {
-            const prev = document.getElementById('pPreview');
-            prev.src = src; prev.style.display = 'block';
-        }
+        function showPreview(src) { const prev = document.getElementById('pPreview'); prev.src = src; prev.style.display = 'block'; }
 
         function saveProduct() {
             const brand = document.getElementById('pBrand').value.trim();
@@ -706,18 +728,11 @@
 
             if (editingId !== null) {
                 const p = products.find(x => x.id === editingId);
-                if (p) {
-                    p.brand = brand || 'Fashion'; p.name = name; p.description = desc;
-                    p.price = price; p.originalPrice = isNaN(orig) ? null : orig;
-                    p.category = category; p.sizes = sizes; p.image = image;
-                }
-                alert('Product updated!');
+                if (p) { p.brand = brand || 'Fashion'; p.name = name; p.description = desc; p.price = price; p.originalPrice = isNaN(orig) ? null : orig; p.category = category; p.sizes = sizes; p.image = image; }
             } else {
                 products.push({ id: Date.now(), brand: brand || 'Fashion', name, description: desc, price, originalPrice: isNaN(orig) ? null : orig, category, image, sizes });
-                alert('Product added!');
             }
-
-            saveProducts();
+            publishProducts(true);
             applyFilters();
             renderAdminList();
             resetForm();
@@ -737,7 +752,7 @@
             document.getElementById('pSizes').value = p.sizes.join(', ');
             pendingImage = null;
             document.getElementById('pImageUrl').value = p.image.startsWith('data:') ? '' : p.image;
-            if (p.image.startsWith('data:')) { pendingImage = p.image; }
+            if (p.image.startsWith('data:')) pendingImage = p.image;
             showPreview(p.image);
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -745,7 +760,7 @@
         function deleteProduct(id) {
             if (!confirm('Delete this product?')) return;
             products = products.filter(x => x.id !== id);
-            saveProducts();
+            publishProducts(false);
             applyFilters();
             renderAdminList();
         }
@@ -771,15 +786,6 @@
             `).join('');
         }
 
-        function copyProductsCode() {
-            const block = '// ===== PRODUCTS START =====\nconst defaultProducts = ' + JSON.stringify(products, null, 4) + ';\n// ===== PRODUCTS END =====';
-            const ta = document.createElement('textarea');
-            ta.value = block; document.body.appendChild(ta); ta.select();
-            try { document.execCommand('copy'); alert('Products code copied! Paste it between the PRODUCTS START / END markers in your index.html file to publish for all customers.'); }
-            catch (e) { alert('Copy failed. Use Export JSON instead.'); }
-            document.body.removeChild(ta);
-        }
-
         function exportJSON() {
             const blob = new Blob([JSON.stringify(products, null, 2)], { type: 'application/json' });
             const a = document.createElement('a');
@@ -795,13 +801,8 @@
             reader.onload = (ev) => {
                 try {
                     const data = JSON.parse(ev.target.result);
-                    if (Array.isArray(data)) {
-                        products = data;
-                        saveProducts();
-                        applyFilters();
-                        renderAdminList();
-                        alert('Products imported!');
-                    } else { alert('Invalid file.'); }
+                    if (Array.isArray(data)) { products = data; publishProducts(false); applyFilters(); renderAdminList(); alert('Imported! Press PUBLISH ALL TO WEBSITE to push it live.'); }
+                    else alert('Invalid file.');
                 } catch (e) { alert('Invalid JSON file.'); }
             };
             reader.readAsText(file);
@@ -810,18 +811,15 @@
 
         function resetDefaults() {
             if (!confirm('Replace all products with the original defaults?')) return;
-            localStorage.removeItem(STORAGE_KEY);
             products = JSON.parse(JSON.stringify(defaultProducts));
+            publishProducts(false);
             applyFilters();
             renderAdminList();
         }
 
-        // ================= STORE FUNCTIONS =================
+        // ================= STORE =================
         function setupSearch() {
-            document.getElementById('searchInput').addEventListener('input', (e) => {
-                currentSearch = e.target.value;
-                applyFilters();
-            });
+            document.getElementById('searchInput').addEventListener('input', (e) => { currentSearch = e.target.value; applyFilters(); });
         }
 
         function applyFilters() {
@@ -829,11 +827,7 @@
             if (currentCategory !== 'all') filtered = filtered.filter(p => p.category === currentCategory);
             if (currentSearch) {
                 const term = currentSearch.toLowerCase();
-                filtered = filtered.filter(p =>
-                    p.name.toLowerCase().includes(term) ||
-                    p.brand.toLowerCase().includes(term) ||
-                    p.description.toLowerCase().includes(term)
-                );
+                filtered = filtered.filter(p => p.name.toLowerCase().includes(term) || p.brand.toLowerCase().includes(term) || p.description.toLowerCase().includes(term));
             }
             displayProducts(filtered);
         }
@@ -841,19 +835,14 @@
         function displayProducts(list) {
             const container = document.getElementById('productsContainer');
             container.innerHTML = '';
-            if (list.length === 0) {
-                container.innerHTML = '<div class="no-results"><i class="fas fa-search"></i><p>No products found matching your search.</p></div>';
-                return;
-            }
+            if (list.length === 0) { container.innerHTML = '<div class="no-results"><i class="fas fa-search"></i><p>No products found matching your search.</p></div>'; return; }
             list.forEach(product => container.appendChild(createProductCard(product)));
         }
 
         function createProductCard(product) {
             const card = document.createElement('div');
             card.className = 'product-card';
-            const sizeButtons = product.sizes.map(size => `
-                <button class="size-btn" onclick="selectSize(this, ${product.id}, '${size}')">${size}</button>
-            `).join('');
+            const sizeButtons = product.sizes.map(size => `<button class="size-btn" onclick="selectSize(this, ${product.id}, '${size}')">${size}</button>`).join('');
             card.innerHTML = `
                 <div class="product-image-wrap">
                     <img src="${product.image}" alt="${product.name}" class="product-image">
@@ -889,9 +878,7 @@
             toggleMenu();
             setTimeout(() => {
                 document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    if (btn.textContent.toLowerCase() === category) btn.click();
-                });
+                document.querySelectorAll('.filter-btn').forEach(btn => { if (btn.textContent.toLowerCase() === category) btn.click(); });
             }, 300);
         }
 
@@ -921,8 +908,7 @@
             const cartItems = document.getElementById('cartItems');
             const cartCount = document.getElementById('cartCount');
             const cartTotal = document.getElementById('cartTotal');
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            cartCount.textContent = totalItems;
+            cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
             if (cart.length === 0) {
                 cartItems.innerHTML = '<div class="empty-cart"><i class="fas fa-shopping-bag"></i><p>Your bag is empty</p></div>';
             } else {
@@ -938,17 +924,11 @@
                     </div>
                 `).join('');
             }
-            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            cartTotal.textContent = `GH₵${total}`;
+            cartTotal.textContent = `GH₵${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0)}`;
         }
 
         function removeFromCart(index) { cart.splice(index, 1); updateCart(); }
-
-        function toggleCart() {
-            document.getElementById('cartSidebar').classList.toggle('active');
-            document.getElementById('cartOverlay').classList.toggle('active');
-        }
-
+        function toggleCart() { document.getElementById('cartSidebar').classList.toggle('active'); document.getElementById('cartOverlay').classList.toggle('active'); }
         function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('active'); }
 
         function openPaymentModal() {
@@ -959,9 +939,7 @@
             document.getElementById('paymentModal').classList.add('active');
             toggleCart();
         }
-
         function closePaymentModal() { document.getElementById('paymentModal').classList.remove('active'); }
-
         function selectPaymentMethod(element, method) {
             document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('selected'));
             element.classList.add('selected');
@@ -974,40 +952,27 @@
             const phone = document.getElementById('customerPhone').value.trim();
             const address = document.getElementById('deliveryAddress').value.trim();
             if (!name || !email || !phone || !address) { alert('Please fill in all fields'); return; }
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) { alert('Please enter a valid email address'); return; }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email address'); return; }
 
             const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            const delivery = 20;
-            const total = (subtotal + delivery) * 100;
+            const total = (subtotal + 20) * 100;
             const orderRef = 'ALLISHERE_' + Date.now();
 
             let orderDetails = `NEW ORDER - ${orderRef}\n\nCustomer: ${name}\nPhone: ${phone}\nEmail: ${email}\nAddress: ${address}\n\nItems:\n`;
             cart.forEach(item => { orderDetails += `- ${item.name} (Size: ${item.size}) - GH₵${item.price} x ${item.quantity}\n`; });
-            orderDetails += `\nSubtotal: GH₵${subtotal}\nDelivery: GH₵${delivery}\nTotal: GH₵${subtotal + delivery}\n\nPayment Method: ${selectedPaymentMethod === 'momo' ? 'Mobile Money' : 'Card'}`;
+            orderDetails += `\nSubtotal: GH₵${subtotal}\nDelivery: GH₵20\nTotal: GH₵${subtotal + 20}\n\nPayment Method: ${selectedPaymentMethod === 'momo' ? 'Mobile Money' : 'Card'}`;
 
             const handler = PaystackPop.setup({
-                key: PAYSTACK_PUBLIC_KEY,
-                email: email,
-                amount: total,
-                currency: 'GHS',
-                ref: orderRef,
-                firstname: name.split(' ')[0],
-                lastname: name.split(' ').slice(1).join(' '),
-                phone: phone,
-                metadata: {
-                    custom_fields: [
-                        { display_name: "Delivery Address", variable_name: "delivery_address", value: address },
-                        { display_name: "Phone Number", variable_name: "phone_number", value: phone }
-                    ]
-                },
+                key: PAYSTACK_PUBLIC_KEY, email, amount: total, currency: 'GHS', ref: orderRef,
+                firstname: name.split(' ')[0], lastname: name.split(' ').slice(1).join(' '), phone,
+                metadata: { custom_fields: [
+                    { display_name: "Delivery Address", variable_name: "delivery_address", value: address },
+                    { display_name: "Phone Number", variable_name: "phone_number", value: phone }
+                ]},
                 callback: function(response) {
                     alert('Payment successful! Reference: ' + response.reference);
-                    const whatsappUrl = `https://wa.me/233599121887?text=${encodeURIComponent(orderDetails + `\n\nPayment Reference: ${response.reference}`)}`;
-                    window.open(whatsappUrl, '_blank');
-                    cart = [];
-                    updateCart();
-                    closePaymentModal();
+                    window.open(`https://wa.me/233599121887?text=${encodeURIComponent(orderDetails + `\n\nPayment Reference: ${response.reference}`)}`, '_blank');
+                    cart = []; updateCart(); closePaymentModal();
                 },
                 onClose: function() { alert('Payment window closed. Please complete your order.'); }
             });
@@ -1024,4 +989,4 @@
         }
     </script>
 </body>
-    </html>
+                </html>
