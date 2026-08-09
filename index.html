@@ -47,8 +47,7 @@
         .filter-btn { padding: 10px 20px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; position: relative; white-space: nowrap; color: #666; }
         .filter-btn.active { color: #000; }
         .filter-btn.active::after { content: ''; position: absolute; bottom: -10px; left: 0; right: 0; height: 2px; background-color: #000; }
-        .products-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
-        .product-card { background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .products-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }        .product-card { background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         .product-image-wrap { position: relative; }
         .product-image { width: 100%; height: 300px; object-fit: cover; background-color: #f5f5f5; }
@@ -97,8 +96,7 @@
         .cart-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 1000; display: none; }
         .cart-overlay.active { display: block; }
         .cart-header { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #e0e0e0; }
-        .close-cart { background: none; border: none; font-size: 24px; cursor: pointer; }
-        .cart-items { flex: 1; overflow-y: auto; padding: 20px; }
+        .close-cart { background: none; border: none; font-size: 24px; cursor: pointer; }        .cart-items { flex: 1; overflow-y: auto; padding: 20px; }
         .cart-item { display: flex; gap: 15px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e0e0e0; }
         .cart-item-image { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; }
         .cart-item-details { flex: 1; }
@@ -147,8 +145,7 @@
         .admin-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
         .admin-btn { padding: 10px 18px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 14px; }
         .admin-btn.primary { background: #000; color: #fff; }
-        .admin-btn.green { background: #00B06E; color: #fff; }
-        .admin-btn.red { background: #e53935; color: #fff; }
+        .admin-btn.green { background: #00B06E; color: #fff; }        .admin-btn.red { background: #e53935; color: #fff; }
         .admin-btn.gray { background: #ddd; color: #222; }
         .admin-list-item { display: flex; gap: 12px; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
         .admin-list-item img { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; background: #f0f0f0; }
@@ -198,7 +195,6 @@
             </div>
         </nav>
     </header>
-
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
         <ul>
@@ -247,8 +243,7 @@
 
     <div class="stock-statement">
         <i class="fas fa-warehouse"></i>
-        <p><strong>100% IN-STOCK GUARANTEE:</strong> Every product listed on this website is physically in stock at our Accra store and ready for immediate dispatch. We do <strong>NOT</strong> operate a dropshipping model — all orders ship directly from our own inventory.</p>
-    </div>
+        <p><strong>100% IN-STOCK GUARANTEE:</strong> Every product listed on this website is physically in stock at our Accra store and ready for immediate dispatch. We do <strong>NOT</strong> operate a dropshipping model — all orders ship directly from our own inventory.</p>    </div>
 
     <div class="category-filter">
         <button class="filter-btn active" onclick="filterProducts('all')">ALL</button>
@@ -297,8 +292,7 @@
         <div class="policy-section">
             <h3><i class="fas fa-ban"></i> Order Cancellation</h3>
             <p>You may cancel your order <strong>free of charge at any time before it is dispatched</strong> for delivery. To cancel, contact us on WhatsApp (+233 599 121887) or email dokumkwamevida@gmail.com with your order reference. A full refund will be issued to your original payment method.</p>
-            <h3><i class="fas fa-undo"></i> Returns (7-Day Return Window)</h3>
-            <ul>
+            <h3><i class="fas fa-undo"></i> Returns (7-Day Return Window)</h3>            <ul>
                 <li>We accept returns within <strong>7 days of delivery</strong> for items that are defective, damaged, or not as described.</li>
                 <li><strong>Size exchanges</strong> are available within 7 days, provided the item is unworn, unwashed, and in its original packaging with tags attached.</li>
                 <li>All returns must be accompanied by proof of purchase (order reference or receipt).</li>
@@ -347,8 +341,7 @@
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"Ordered the Air Force 1s on Monday and they arrived in East Legon the next day. 100% original, super clean stitching. Highly recommended!"</p>
-                <div class="testimonial-author">Kwame A.</div><div class="testimonial-location">Accra</div>
-            </div>
+                <div class="testimonial-author">Kwame A.</div><div class="testimonial-location">Accra</div>            </div>
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"I was sceptical at first, but my Samba OG was authentic and the size was exactly right. Their WhatsApp customer service is top-notch."</p>
@@ -397,8 +390,7 @@
             <div style="background-color: #f8f8f8; padding: 15px; border-radius: 5px; margin: 20px 0;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"><span>Subtotal:</span><span id="modalSubtotal">GH₵0</span></div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"><span>Delivery:</span><span>GH₵20</span></div>
-                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 700; border-top: 2px solid #ddd; padding-top: 10px; margin-top: 10px;"><span>Total:</span><span id="modalTotal">GH₵0</span></div>
-            </div>
+                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 700; border-top: 2px solid #ddd; padding-top: 10px; margin-top: 10px;"><span>Total:</span><span id="modalTotal">GH₵0</span></div>            </div>
             <button class="pay-now-btn" onclick="processPayment()"><i class="fas fa-lock"></i> PAY SECURELY NOW</button>
             <p style="text-align: center; margin-top: 15px; font-size: 12px; color: #666;"><i class="fas fa-shield-alt"></i> Your payment is secured by Paystack</p>
         </div>
@@ -427,9 +419,9 @@
             <div class="admin-card">
                 <h3><i class="fab fa-github"></i> GitHub Connection (one-time setup)</h3>
                 <div class="admin-grid">
-                    <div class="admin-field"><label>Repository (owner/repo)</label><input type="text" id="ghRepo" placeholder="e.g. kwame/allishere"></div>
+                    <div class="admin-field"><label>Repository — paste the repo LINK or owner/repo</label><input type="text" id="ghRepo" placeholder="e.g. https://github.com/owner/repo"></div>
                     <div class="admin-field"><label>Branch</label><input type="text" id="ghBranch" placeholder="main"></div>
-                    <div class="admin-field"><label>Folder (leave empty if files are at root)</label><input type="text" id="ghPrefix" placeholder="e.g. docs or leave empty"></div>
+                    <div class="admin-field"><label>Folder (leave empty if files are at root)</label><input type="text" id="ghPrefix" placeholder="leave empty"></div>
                     <div class="admin-field full"><label>Personal Access Token</label><input type="password" id="ghToken" placeholder="github_pat_..."></div>
                 </div>
                 <div class="admin-actions">
@@ -447,8 +439,7 @@
                             <option value="sneakers">Sneakers</option>
                             <option value="dresses">Dresses</option>
                             <option value="casual">Casual</option>
-                            <option value="boots">Boots</option>
-                        </select>
+                            <option value="boots">Boots</option>                        </select>
                     </div>
                     <div class="admin-field full"><label>Product Name</label><input type="text" id="pName" placeholder="e.g. Nike Air Force 1 Low"></div>
                     <div class="admin-field full"><label>Description</label><textarea id="pDesc" rows="2" placeholder="Short description"></textarea></div>
@@ -497,8 +488,7 @@
                 <p><i class="fas fa-phone"></i> +233 599 121887</p>
                 <p><i class="fas fa-envelope"></i> dokumkwamevida@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
-            </div>
-            <div class="footer-links">
+            </div>            <div class="footer-links">
                 <a href="#about">About Us</a>
                 <a href="#shipping">Shipping & Delivery Policy</a>
                 <a href="#refunds">Refund & Cancellation Policy</a>
@@ -527,7 +517,6 @@
         const ADMIN_PASSWORD = 'allishere2026';   // <-- CHANGE THIS
         const STORAGE_KEY = 'aihe_products_v1';
 
-        // GitHub connection (saved on this device after Connect & Test)
         const GH = {
             repo: localStorage.getItem('gh_repo') || '',
             branch: localStorage.getItem('gh_branch') || 'main',
@@ -548,8 +537,7 @@
             { id: 7, brand: 'Timberland', name: '6-Inch Premium Boots', description: 'Waterproof leather boots', price: 650, originalPrice: 750, category: 'boots', image: 'https://via.placeholder.com/300x300/FCBAD3/FFFFFF?text=Timberland', sizes: [40, 41, 42, 43] },
             { id: 8, brand: 'Dr. Martens', name: '1460 Smooth Boots', description: 'Iconic 8-eye leather boots', price: 720, originalPrice: null, category: 'boots', image: 'https://via.placeholder.com/300x300/FFFFD2/000000?text=Dr+Martens', sizes: [39, 40, 41, 42, 43] },
             { id: 9, brand: 'Fashion', name: 'Elegant Day Dress', description: 'Beautiful and stylish dress for any occasion.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/AgvFkPv.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
-            { id: 10, brand: 'Fashion', name: 'Chic Casual Dress', description: 'Comfortable and trendy dress for everyday wear.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/X0yPjBC.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
-            { id: 11, brand: 'Fashion', name: 'Classic Evening Dress', description: 'Perfect dress for evening outings and special events.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/0W8Ibe9.jpeg', sizes: ['S', 'M', 'L', 'XL'] }
+            { id: 10, brand: 'Fashion', name: 'Chic Casual Dress', description: 'Comfortable and trendy dress for everyday wear.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/X0yPjBC.jpeg', sizes: ['S', 'M', 'L', 'XL'] },            { id: 11, brand: 'Fashion', name: 'Classic Evening Dress', description: 'Perfect dress for evening outings and special events.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/0W8Ibe9.jpeg', sizes: ['S', 'M', 'L', 'XL'] }
         ];
 
         let products = JSON.parse(JSON.stringify(defaultProducts));
@@ -563,7 +551,6 @@
         const PAYSTACK_PUBLIC_KEY = 'pk_test_099df02a13b62cf1bd0f121c3afe8430610bdff6';
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Prefill GitHub connection fields
             document.getElementById('ghRepo').value = GH.repo;
             document.getElementById('ghBranch').value = GH.branch;
             document.getElementById('ghPrefix').value = GH.prefix;
@@ -594,22 +581,28 @@
             }
         }
 
-        // Read the live products.json from the website (works for every visitor)
         function loadLiveProducts() {
             fetch('products.json?v=' + Date.now(), { cache: 'no-store' })
                 .then(r => r.ok ? r.json() : null)
                 .then(data => {
                     if (Array.isArray(data) && data.length) {
-                        products = data;
-                        applyFilters();
+                        products = data;                        applyFilters();
                         if (document.getElementById('adminPanel').classList.contains('active')) renderAdminList();
                     }
                 }).catch(() => {});
         }
 
         // ================= GITHUB PUBLISHING =================
+        function cleanRepoInput(raw) {
+            let repo = raw.trim();
+            const m = repo.match(/github\.com\/([^\/\s]+)\/([^\/\s#?]+)/i);
+            if (m) repo = m[1] + '/' + m[2];
+            repo = repo.replace(/\.git$/i, '').replace(/\s+/g, '');
+            return repo;
+        }
+
         function connectGitHub() {
-            const repo = document.getElementById('ghRepo').value.trim();
+            const repo = cleanRepoInput(document.getElementById('ghRepo').value);
             const branch = document.getElementById('ghBranch').value.trim() || 'main';
             const prefix = document.getElementById('ghPrefix').value.trim();
             const token = document.getElementById('ghToken').value.trim();
@@ -623,10 +616,11 @@
                         localStorage.setItem('gh_branch', branch);
                         localStorage.setItem('gh_prefix', prefix);
                         localStorage.setItem('gh_token', token);
+                        document.getElementById('ghRepo').value = repo;
                         setSyncBanner();
                         alert('Connected! You can now upload products — they will publish automatically.');
                     } else {
-                        alert('Connection failed (' + r.status + '). Check the repository name (owner/repo) and the token permissions.');
+                        alert('Connection failed (' + r.status + '). Tested repository: ' + repo + ' — send a screenshot of this message to your developer.');
                     }
                 }).catch(() => alert('Connection failed. Check your internet.'));
         }
@@ -641,8 +635,7 @@
                     const body = { message: message, content: base64Content, branch: GH.branch };
                     if (meta && meta.sha) body.sha = meta.sha;
                     return fetch(url, {
-                        method: 'PUT',
-                        headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders()),
+                        method: 'PUT',                        headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders()),
                         body: JSON.stringify(body)
                     });
                 });
@@ -676,12 +669,9 @@
                     const m = dataUrl.match(/^data:image\/(png|jpe?g|webp);base64,(.+)$/s);
                     if (m) {
                         const ext = (m[1] === 'png') ? 'png' : ((m[1] === 'webp') ? 'webp' : 'jpg');
-                        const path = ghPath('uploads/product_' + Date.now() + '.' + ext);
-                        putFile(path, m[2], 'Product image ' + new Date().toISOString())
-                            .then(r => {
-                                if (r.ok) { pendingImage = 'uploads/product_' + path.split('/').pop(); }
-                                else { pendingImage = dataUrl; }
-                            })
+                        const fname = 'uploads/product_' + Date.now() + '.' + ext;
+                        putFile(ghPath(fname), m[2], 'Product image ' + new Date().toISOString())
+                            .then(r => { pendingImage = r.ok ? fname : dataUrl; })
                             .catch(() => { pendingImage = dataUrl; });
                     } else { pendingImage = dataUrl; }
                 } else {
@@ -694,8 +684,7 @@
         // ================= ADMIN =================
         function openAdminLogin() {
             if (sessionStorage.getItem('aihe_admin') === '1') openAdminPanel();
-            else document.getElementById('adminLoginModal').classList.add('active');
-        }
+            else document.getElementById('adminLoginModal').classList.add('active');        }
         function closeAdminLogin() { document.getElementById('adminLoginModal').classList.remove('active'); }
         function attemptAdminLogin() {
             if (document.getElementById('adminPassword').value === ADMIN_PASSWORD) {
@@ -744,8 +733,7 @@
             editingId = id;
             document.getElementById('formTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Product';
             document.getElementById('pBrand').value = p.brand;
-            document.getElementById('pName').value = p.name;
-            document.getElementById('pDesc').value = p.description;
+            document.getElementById('pName').value = p.name;            document.getElementById('pDesc').value = p.description;
             document.getElementById('pPrice').value = p.price;
             document.getElementById('pOrigPrice').value = p.originalPrice || '';
             document.getElementById('pCategory').value = p.category;
@@ -794,8 +782,7 @@
             a.click();
         }
 
-        function importJSON(event) {
-            const file = event.target.files[0];
+        function importJSON(event) {            const file = event.target.files[0];
             if (!file) return;
             const reader = new FileReader();
             reader.onload = (ev) => {
@@ -844,8 +831,7 @@
             card.className = 'product-card';
             const sizeButtons = product.sizes.map(size => `<button class="size-btn" onclick="selectSize(this, ${product.id}, '${size}')">${size}</button>`).join('');
             card.innerHTML = `
-                <div class="product-image-wrap">
-                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                <div class="product-image-wrap">                    <img src="${product.image}" alt="${product.name}" class="product-image">
                     <span class="stock-badge">IN STOCK</span>
                 </div>
                 <div class="product-info">
@@ -894,8 +880,7 @@
         function addToCart(productId) {
             const product = products.find(p => p.id === productId);
             const sizeContainer = document.getElementById(`sizes-${productId}`);
-            const selectedSizeBtn = sizeContainer.querySelector('.size-btn.active');
-            if (!selectedSizeBtn) { alert('Please select a size first!'); return; }
+            const selectedSizeBtn = sizeContainer.querySelector('.size-btn.active');            if (!selectedSizeBtn) { alert('Please select a size first!'); return; }
             const selectedSize = selectedSizeBtn.dataset.selected || selectedSizeBtn.textContent.trim();
             const existingItem = cart.find(item => item.id === productId && item.size === selectedSize);
             if (existingItem) existingItem.quantity += 1;
@@ -945,7 +930,6 @@
             element.classList.add('selected');
             selectedPaymentMethod = method;
         }
-
         function processPayment() {
             const name = document.getElementById('customerName').value.trim();
             const email = document.getElementById('customerEmail').value.trim();
@@ -989,4 +973,4 @@
         }
     </script>
 </body>
-                </html>
+                                  </html>
