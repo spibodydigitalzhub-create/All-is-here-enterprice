@@ -47,7 +47,8 @@
         .filter-btn { padding: 10px 20px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; position: relative; white-space: nowrap; color: #666; }
         .filter-btn.active { color: #000; }
         .filter-btn.active::after { content: ''; position: absolute; bottom: -10px; left: 0; right: 0; height: 2px; background-color: #000; }
-        .products-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }        .product-card { background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .products-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        .product-card { background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         .product-image-wrap { position: relative; }
         .product-image { width: 100%; height: 300px; object-fit: cover; background-color: #f5f5f5; }
@@ -96,7 +97,8 @@
         .cart-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 1000; display: none; }
         .cart-overlay.active { display: block; }
         .cart-header { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #e0e0e0; }
-        .close-cart { background: none; border: none; font-size: 24px; cursor: pointer; }        .cart-items { flex: 1; overflow-y: auto; padding: 20px; }
+        .close-cart { background: none; border: none; font-size: 24px; cursor: pointer; }
+        .cart-items { flex: 1; overflow-y: auto; padding: 20px; }
         .cart-item { display: flex; gap: 15px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e0e0e0; }
         .cart-item-image { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; }
         .cart-item-details { flex: 1; }
@@ -137,7 +139,7 @@
         .admin-body { max-width: 900px; margin: 20px auto; padding: 0 15px 60px; }
         .admin-card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .admin-card h3 { margin-bottom: 15px; }
-        .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .admin-grid { display: grid; grid-template-columns: 1fr  1fr; gap: 12px; }
         @media (max-width: 600px) { .admin-grid { grid-template-columns: 1fr; } }
         .admin-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #444; }
         .admin-field input, .admin-field select, .admin-field textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; }
@@ -145,7 +147,8 @@
         .admin-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
         .admin-btn { padding: 10px 18px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 14px; }
         .admin-btn.primary { background: #000; color: #fff; }
-        .admin-btn.green { background: #00B06E; color: #fff; }        .admin-btn.red { background: #e53935; color: #fff; }
+        .admin-btn.green { background: #00B06E; color: #fff; }
+        .admin-btn.red { background: #e53935; color: #fff; }
         .admin-btn.gray { background: #ddd; color: #222; }
         .admin-list-item { display: flex; gap: 12px; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
         .admin-list-item img { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; background: #f0f0f0; }
@@ -215,6 +218,7 @@
                 <button onclick="scrollToShopAndFilter('sneakers')">Adidas</button>
                 <button onclick="scrollToShopAndFilter('sneakers')">New Balance</button>
                 <button onclick="scrollToShopAndFilter('casual')">Puma</button>
+                <button onclick="scrollToShopAndFilter('electronics')">Gadgets</button>
             </div>
         </div>
         <div class="contact-info">
@@ -227,7 +231,7 @@
 
     <section id="home" class="hero">
         <h1>ALL IS HERE ENTERPRISE</h1>
-        <p>Premium Sneakers, Dresses, and Fashion in Ghana.</p>
+        <p>Premium Sneakers, Dresses, Gadgets & Fashion in Ghana.</p>
         <a href="#shop" class="hero-btn">SHOP NOW</a>
         <div class="payment-badges">
             <div class="payment-badge"><i class="fas fa-mobile-alt"></i> Mobile Money</div>
@@ -238,12 +242,13 @@
 
     <div class="search-container" id="shop">
         <i class="fas fa-search search-icon"></i>
-        <input type="text" id="searchInput" placeholder="Search for sneakers, dresses, brands...">
+        <input type="text" id="searchInput" placeholder="Search for sneakers, dresses, gadgets, brands...">
     </div>
 
     <div class="stock-statement">
         <i class="fas fa-warehouse"></i>
-        <p><strong>100% IN-STOCK GUARANTEE:</strong> Every product listed on this website is physically in stock at our Accra store and ready for immediate dispatch. We do <strong>NOT</strong> operate a dropshipping model — all orders ship directly from our own inventory.</p>    </div>
+        <p><strong>100% IN-STOCK GUARANTEE:</strong> Every product listed on this website is physically in stock at our Accra store and ready for immediate dispatch. We do <strong>NOT</strong> operate a dropshipping model — all orders ship directly from our own inventory.</p>
+    </div>
 
     <div class="category-filter">
         <button class="filter-btn active" onclick="filterProducts('all')">ALL</button>
@@ -251,6 +256,7 @@
         <button class="filter-btn" onclick="filterProducts('dresses')">DRESSES</button>
         <button class="filter-btn" onclick="filterProducts('casual')">CASUAL</button>
         <button class="filter-btn" onclick="filterProducts('boots')">BOOTS</button>
+        <button class="filter-btn" onclick="filterProducts('gadgets')">ELECTRONICS</button>
     </div>
 
     <section id="shop-section">
@@ -261,8 +267,8 @@
     <section id="about">
         <h2 class="section-title">About Us</h2>
         <div class="about-text">
-            <p>Welcome to <strong>ALL IS HERE ENTERPRISE</strong>. We are dedicated to bringing you the finest selection of premium sneakers, stylish dresses, and casual wear in Ghana.</p><br>
-            <p>Whether you're looking for the latest Nike Air Force 1s, classic Adidas Sambas, or elegant evening dresses, we've got you covered. We pride ourselves on authentic products, excellent customer service, and fast delivery across Accra and beyond.</p><br>
+            <p>Welcome to <strong>ALL IS HERE ENTERPRISE</strong>. We are dedicated to bringing you the finest selection of premium sneakers, stylish dresses, electronic gadgets and casual wear in Ghana.</p><br>
+            <p>Whether you're looking for the latest Nike Air Force 1s, classic Adidas Sambas, elegant evening dresses, or original gadgets and accessories, we've got you covered. We pride ourselves on authentic products, excellent customer service, and fast delivery across Accra and beyond.</p><br>
             <p>All of our inventory is purchased outright from verified suppliers and held in stock at our Accra location, so your order is dispatched immediately after payment — no third-party dropshipping, no long waits.</p>
         </div>
     </section>
@@ -292,7 +298,8 @@
         <div class="policy-section">
             <h3><i class="fas fa-ban"></i> Order Cancellation</h3>
             <p>You may cancel your order <strong>free of charge at any time before it is dispatched</strong> for delivery. To cancel, contact us on WhatsApp (+233 599 121887) or email dokumkwamevida@gmail.com with your order reference. A full refund will be issued to your original payment method.</p>
-            <h3><i class="fas fa-undo"></i> Returns (7-Day Return Window)</h3>            <ul>
+            <h3><i class="fas fa-undo"></i> Returns (7-Day Return Window)</h3>
+            <ul>
                 <li>We accept returns within <strong>7 days of delivery</strong> for items that are defective, damaged, or not as described.</li>
                 <li><strong>Size exchanges</strong> are available within 7 days, provided the item is unworn, unwashed, and in its original packaging with tags attached.</li>
                 <li>All returns must be accompanied by proof of purchase (order reference or receipt).</li>
@@ -341,7 +348,8 @@
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"Ordered the Air Force 1s on Monday and they arrived in East Legon the next day. 100% original, super clean stitching. Highly recommended!"</p>
-                <div class="testimonial-author">Kwame A.</div><div class="testimonial-location">Accra</div>            </div>
+                <div class="testimonial-author">Kwame A.</div><div class="testimonial-location">Accra</div>
+            </div>
             <div class="testimonial-card">
                 <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="testimonial-text">"I was sceptical at first, but my Samba OG was authentic and the size was exactly right. Their WhatsApp customer service is top-notch."</p>
@@ -390,7 +398,8 @@
             <div style="background-color: #f8f8f8; padding: 15px; border-radius: 5px; margin: 20px 0;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"><span>Subtotal:</span><span id="modalSubtotal">GH₵0</span></div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"><span>Delivery:</span><span>GH₵20</span></div>
-                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 700; border-top: 2px solid #ddd; padding-top: 10px; margin-top: 10px;"><span>Total:</span><span id="modalTotal">GH₵0</span></div>            </div>
+                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 700; border-top: 2px solid #ddd; padding-top: 10px; margin-top: 10px;"><span>Total:</span><span id="modalTotal">GH₵0</span></div>
+            </div>
             <button class="pay-now-btn" onclick="processPayment()"><i class="fas fa-lock"></i> PAY SECURELY NOW</button>
             <p style="text-align: center; margin-top: 15px; font-size: 12px; color: #666;"><i class="fas fa-shield-alt"></i> Your payment is secured by Paystack</p>
         </div>
@@ -439,13 +448,15 @@
                             <option value="sneakers">Sneakers</option>
                             <option value="dresses">Dresses</option>
                             <option value="casual">Casual</option>
-                            <option value="boots">Boots</option>                        </select>
+                            <option value="boots">Boots</option>
+                            <option value="gadgets">Electronic Gadgets</option>
+                        </select>
                     </div>
                     <div class="admin-field full"><label>Product Name</label><input type="text" id="pName" placeholder="e.g. Nike Air Force 1 Low"></div>
                     <div class="admin-field full"><label>Description</label><textarea id="pDesc" rows="2" placeholder="Short description"></textarea></div>
                     <div class="admin-field"><label>Price (GH₵)</label><input type="number" id="pPrice" placeholder="e.g. 350"></div>
                     <div class="admin-field"><label>Original Price (optional, for SALE badge)</label><input type="number" id="pOrigPrice" placeholder="e.g. 400"></div>
-                    <div class="admin-field full"><label>Sizes (comma separated)</label><input type="text" id="pSizes" placeholder="e.g. 40, 41, 42, 43  or  S, M, L, XL"></div>
+                    <div class="admin-field full"><label>Sizes (comma separated)</label><input type="text" id="pSizes" placeholder="e.g. 40, 41, 42, 43  or  S, M, L, XL  or  Standard"></div>
                 </div>
                 <div class="admin-field" style="margin-top:12px;">
                     <label>Product Image — upload a photo OR paste an image URL</label>
@@ -488,7 +499,8 @@
                 <p><i class="fas fa-phone"></i> +233 599 121887</p>
                 <p><i class="fas fa-envelope"></i> dokumkwamevida@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
-            </div>            <div class="footer-links">
+            </div>
+            <div class="footer-links">
                 <a href="#about">About Us</a>
                 <a href="#shipping">Shipping & Delivery Policy</a>
                 <a href="#refunds">Refund & Cancellation Policy</a>
@@ -537,7 +549,12 @@
             { id: 7, brand: 'Timberland', name: '6-Inch Premium Boots', description: 'Waterproof leather boots', price: 650, originalPrice: 750, category: 'boots', image: 'https://via.placeholder.com/300x300/FCBAD3/FFFFFF?text=Timberland', sizes: [40, 41, 42, 43] },
             { id: 8, brand: 'Dr. Martens', name: '1460 Smooth Boots', description: 'Iconic 8-eye leather boots', price: 720, originalPrice: null, category: 'boots', image: 'https://via.placeholder.com/300x300/FFFFD2/000000?text=Dr+Martens', sizes: [39, 40, 41, 42, 43] },
             { id: 9, brand: 'Fashion', name: 'Elegant Day Dress', description: 'Beautiful and stylish dress for any occasion.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/AgvFkPv.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
-            { id: 10, brand: 'Fashion', name: 'Chic Casual Dress', description: 'Comfortable and trendy dress for everyday wear.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/X0yPjBC.jpeg', sizes: ['S', 'M', 'L', 'XL'] },            { id: 11, brand: 'Fashion', name: 'Classic Evening Dress', description: 'Perfect dress for evening outings and special events.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/0W8Ibe9.jpeg', sizes: ['S', 'M', 'L', 'XL'] }
+            { id: 10, brand: 'Fashion', name: 'Chic Casual Dress', description: 'Comfortable and trendy dress for everyday wear.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/X0yPjBC.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
+            { id: 11, brand: 'Fashion', name: 'Classic Evening Dress', description: 'Perfect dress for evening outings and special events.', price: 250, originalPrice: null, category: 'dresses', image: 'https://i.imgur.com/0W8Ibe9.jpeg', sizes: ['S', 'M', 'L', 'XL'] },
+            { id: 12, brand: 'Apple', name: 'AirPods Pro (2nd Gen)', description: 'Active noise cancellation, wireless charging case', price: 950, originalPrice: 1100, category: 'gadgets', image: 'https://via.placeholder.com/300x300/1a1a1a/FFFFFF?text=AirPods+Pro', sizes: ['Standard'] },
+            { id: 13, brand: 'JBL', name: 'JBL Flip 6 Bluetooth Speaker', description: 'Bold sound, deep bass, IP67 waterproof', price: 780, originalPrice: null, category: 'gadgets', image: 'https://via.placeholder.com/300x300/004499/FFFFFF?text=JBL+Flip+6', sizes: ['Standard'] },
+            { id: 14, brand: 'Oraimo', name: 'Oraimo Smart Watch', description: 'Fitness tracking, calls & notifications', price: 450, originalPrice: 520, category: 'gadgets', image: 'https://via.placeholder.com/300x300/00B06E/FFFFFF?text=Smart+Watch', sizes: ['Standard'] },
+            { id: 15, brand: 'Anker', name: 'Anker 20,000mAh Power Bank', description: 'Fast charging for phones & tablets', price: 380, originalPrice: null, category: 'gadgets', image: 'https://via.placeholder.com/300x300/333333/FFFFFF?text=Power+Bank', sizes: ['Standard'] }
         ];
 
         let products = JSON.parse(JSON.stringify(defaultProducts));
@@ -586,7 +603,8 @@
                 .then(r => r.ok ? r.json() : null)
                 .then(data => {
                     if (Array.isArray(data) && data.length) {
-                        products = data;                        applyFilters();
+                        products = data;
+                        applyFilters();
                         if (document.getElementById('adminPanel').classList.contains('active')) renderAdminList();
                     }
                 }).catch(() => {});
@@ -635,7 +653,8 @@
                     const body = { message: message, content: base64Content, branch: GH.branch };
                     if (meta && meta.sha) body.sha = meta.sha;
                     return fetch(url, {
-                        method: 'PUT',                        headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders()),
+                        method: 'PUT',
+                        headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders()),
                         body: JSON.stringify(body)
                     });
                 });
@@ -684,7 +703,8 @@
         // ================= ADMIN =================
         function openAdminLogin() {
             if (sessionStorage.getItem('aihe_admin') === '1') openAdminPanel();
-            else document.getElementById('adminLoginModal').classList.add('active');        }
+            else document.getElementById('adminLoginModal').classList.add('active');
+        }
         function closeAdminLogin() { document.getElementById('adminLoginModal').classList.remove('active'); }
         function attemptAdminLogin() {
             if (document.getElementById('adminPassword').value === ADMIN_PASSWORD) {
@@ -733,7 +753,8 @@
             editingId = id;
             document.getElementById('formTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Product';
             document.getElementById('pBrand').value = p.brand;
-            document.getElementById('pName').value = p.name;            document.getElementById('pDesc').value = p.description;
+            document.getElementById('pName').value = p.name;
+            document.getElementById('pDesc').value = p.description;
             document.getElementById('pPrice').value = p.price;
             document.getElementById('pOrigPrice').value = p.originalPrice || '';
             document.getElementById('pCategory').value = p.category;
@@ -782,7 +803,8 @@
             a.click();
         }
 
-        function importJSON(event) {            const file = event.target.files[0];
+        function importJSON(event) {
+            const file = event.target.files[0];
             if (!file) return;
             const reader = new FileReader();
             reader.onload = (ev) => {
@@ -831,7 +853,8 @@
             card.className = 'product-card';
             const sizeButtons = product.sizes.map(size => `<button class="size-btn" onclick="selectSize(this, ${product.id}, '${size}')">${size}</button>`).join('');
             card.innerHTML = `
-                <div class="product-image-wrap">                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                <div class="product-image-wrap">
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
                     <span class="stock-badge">IN STOCK</span>
                 </div>
                 <div class="product-info">
@@ -850,6 +873,12 @@
                     <button class="add-to-bag" onclick="addToCart(${product.id})"><i class="fas fa-shopping-bag"></i> ADD TO BAG</button>
                 </div>
             `;
+            // Gadgets & one-size items: auto-select the size so customers can add to bag instantly
+            if (product.sizes.length === 1) {
+                const b = card.querySelector('.size-btn');
+                b.classList.add('active');
+                b.dataset.selected = String(product.sizes[0]);
+            }
             return card;
         }
 
@@ -880,7 +909,8 @@
         function addToCart(productId) {
             const product = products.find(p => p.id === productId);
             const sizeContainer = document.getElementById(`sizes-${productId}`);
-            const selectedSizeBtn = sizeContainer.querySelector('.size-btn.active');            if (!selectedSizeBtn) { alert('Please select a size first!'); return; }
+            const selectedSizeBtn = sizeContainer.querySelector('.size-btn.active');
+            if (!selectedSizeBtn) { alert('Please select a size first!'); return; }
             const selectedSize = selectedSizeBtn.dataset.selected || selectedSizeBtn.textContent.trim();
             const existingItem = cart.find(item => item.id === productId && item.size === selectedSize);
             if (existingItem) existingItem.quantity += 1;
@@ -973,4 +1003,4 @@
         }
     </script>
 </body>
-                                  </html>
+</html>
