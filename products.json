@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "brand": "Nike",
+    "name": "Nike Air Force 1 Low",
+    "description": "Classic white sneakers with premium leather",
+    "price": 319,
+    "originalPrice": 349,
+    "category": "sneakers",
+    "image": "uploads/product_1786810935798.jpg",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "Adidas",
+    "name": "Adidas Samba OG",
+    "description": "Iconic indoor soccer shoe with vintage style",
+    "price": 359,
+    "originalPrice": null,
+    "category": "sneakers",
+    "image": "https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=Adidas+Samba",
+    "sizes": [
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Converse",
+    "name": "Chuck 70 High Top",
+    "description": "Premium canvas high-top sneakers",
+    "price": 379,
+    "originalPrice": 399,
+    "category": "sneakers",
+    "image": "https://via.placeholder.com/300x300/4ECDC4/FFFFFF?text=Converse+70",
+    "sizes": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "New Balance",
+    "name": "NB 550 White Green",
+    "description": "Retro basketball-inspired sneakers",
+    "price": 420,
+    "originalPrice": null,
+    "category": "sneakers",
+    "image": "https://via.placeholder.com/300x300/95E1D3/FFFFFF?text=NB+550",
+    "sizes": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "id": 5,
+    "brand": "Puma",
+    "name": "Puma Suede Classic",
+    "description": "Timeless suede sneakers",
+    "price": 289,
+    "originalPrice": 320,
+    "category": "casual",
+    "image": "https://via.placeholder.com/300x300/F38181/FFFFFF?text=Puma+Suede",
+    "sizes": [
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "id": 6,
+    "brand": "Vans",
+    "name": "Old Skool Black White",
+    "description": "Classic skate shoes with iconic side stripe",
+    "price": 299,
+    "originalPrice": null,
+    "category": "casual",
+    "image": "https://via.placeholder.com/300x300/AA96DA/FFFFFF?text=Vans+Old+Skool",
+    "sizes": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "id": 7,
+    "brand": "Timberland",
+    "name": "6-Inch Premium Boots",
+    "description": "Waterproof leather boots",
+    "price": 650,
+    "originalPrice": 750,
+    "category": "boots",
+    "image": "https://via.placeholder.com/300x300/FCBAD3/FFFFFF?text=Timberland",
+    "sizes": [
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "id": 8,
+    "brand": "Dr. Martens",
+    "name": "1460 Smooth Boots",
+    "description": "Iconic 8-eye leather boots",
+    "price": 720,
+    "originalPrice": null,
+    "category": "boots",
+    "image": "https://via.placeholder.com/300x300/FFFFD2/000000?text=Dr+Martens",
+    "sizes": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "id": 9,
+    "brand": "Fashion",
+    "name": "Elegant Day Dress",
+    "description": "Beautiful and stylish dress for any occasion.",
+    "price": 250,
+    "originalPrice": null,
+    "category": "dresses",
+    "image": "https://i.imgur.com/AgvFkPv.jpeg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": 10,
+    "brand": "Fashion",
+    "name": "Chic Casual Dress",
+    "description": "Comfortable and trendy dress for everyday wear.",
+    "price": 250,
+    "originalPrice": null,
+    "category": "dresses",
+    "image": "https://i.imgur.com/X0yPjBC.jpeg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": 11,
+    "brand": "Fashion",
+    "name": "Classic Evening Dress",
+    "description": "Perfect dress for evening outings and special events.",
+    "price": 250,
+    "originalPrice": null,
+    "category": "dresses",
+    "image": "https://i.imgur.com/0W8Ibe9.jpeg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  }
+]
