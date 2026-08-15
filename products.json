@@ -182,5 +182,18 @@
       "L",
       "XL"
     ]
+  },
+  {
+    "id": 1786825004832,
+    "brand": "Hikers Tv",
+    "name": "Smart TV",
+    "description": "Hikers Android Tv 32\" GH-32GY-HDS - Frameless Android Smart HD LED TV - HDMI - USB - Black - 1 Year Warranty",
+    "price": 1500,
+    "originalPrice": 2000,
+    "category": "gadgets",
+    "image": "uploads/product_1786824998554.jpg",
+    "sizes": [
+      "32"
+    ]
   }
 ]
